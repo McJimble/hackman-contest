@@ -37,4 +37,4 @@ sysinfo.txt
 *.unitypackage
 
 # Hide important API info
-Assets/API/
+Hackman Contest/Assets/API/
