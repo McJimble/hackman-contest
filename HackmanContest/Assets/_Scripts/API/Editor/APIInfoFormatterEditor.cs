@@ -48,8 +48,8 @@ public class APIInfoFormatterEditor : Editor
     private void GenerateAPIAsset()
     {
         string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath(APIAssetPath + "/" + targetFormatter.FileName + "Encoded API.asset");
-        string rawData = SavingHelpers.LoadObjectDataRaw(APIInfoFormatter.GetPathFileName(targetFormatter.FileName));
-        rawData = SavingHelpers.Base64Encode(rawData);
+        string rawData = SavingUtils.LoadObjectDataRaw(APIInfoFormatter.GetPathFileName(targetFormatter.FileName));
+        rawData = SavingUtils.Base64Encode(rawData);
 
         if (!AssetDatabase.IsValidFolder(APIAssetPath))
         {

@@ -18,7 +18,7 @@ public class ExternalAPI
 
     public static ExternalAPI CreateFromEncodedAsset(EncodedAsset asset)
     {
-        string decryptedJson = SavingHelpers.Base64Decode(asset.EncryptedData);
+        string decryptedJson = SavingUtils.Base64Decode(asset.EncryptedData);
 
         return JsonUtility.FromJson<ExternalAPI>(decryptedJson);
     }

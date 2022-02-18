@@ -34,14 +34,14 @@ public class APIInfoFormatter : MonoBehaviour
     public void SaveAPIData()
     {
         string path = GetPathFileName(fileName);
-        SavingHelpers.SaveObjectDataJSON(path, apiInfo);
+        SavingUtils.SaveObjectDataJSON(path, apiInfo);
     }
 
     // Just for testing that my serialization works; updates info shown in the editor.
     public void LoadAPIData()
     {
         string path = GetPathFileName(fileName);
-        SavingHelpers.LoadObjectDataJSON(path, apiInfo);
+        SavingUtils.LoadObjectDataJSON(path, apiInfo);
     }
 
     /// <summary>
