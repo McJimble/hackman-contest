@@ -33,7 +33,7 @@ While it's completely overkill in some aspects for a game of this scope, I tried
 # Notes
 Since I'm not a very good animator/3d modeler, none of the 3d assets and animations were created by me.
 The packages used were Synty Low Poly asset package, as well as Unity's Standard Character assets https://github.com/Unity-Technologies/Standard-Assets-Characters
-However, not all animations in the game are from those packages. Inverse Kinematics were used for more dynamic animations the occur in real time, like running with your weapon, shooting and holding a weapon, etc.
+However, not all animations in the game are from those packages. Inverse Kinematics were used for more dynamic animations that occur in real time, like running with your weapon, shooting and holding the weapon, etc.
 
 All 2D sprites and UI images were drawn by me.
 I plan to add more visuals, as well as custom models and animations in the future in order to practice those skills.
