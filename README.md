@@ -1,5 +1,5 @@
 # Hackman Contest
-Hangman, but it's a 3rd person shooter, for some reason.
+Hangman, but it's a 3rd person shooter for some reason.
 
 Submission for the Hackman contest hosted by the Clemson School of Computing discord. The goal was to make a hangman related program in 2 weeks, provided that we utilize their custom API to receive information from a server during gameplay. 
 
