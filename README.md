@@ -43,5 +43,8 @@ However, not all animations in the game are from those packages. Inverse Kinemat
 All 2D sprites and UI images were drawn by me.
 I plan to add more visuals, as well as custom models and animations in the future in order to practice those skills.
 
+# Known Issues
+- Player can climb walls and walk through corners due to inaccurate displacement calculations
+- Shooting inputs are occasionally ignored (rare)
 
 
