@@ -3,6 +3,7 @@ using System;
 
 public class HealthComponent : MonoBehaviour, IDamageReceiver
 {
+    [SerializeField] AudioClip onHitSound;
     [SerializeField] private float maxHealth;
     [Space]
     [Tooltip("If false, no blinking occurs when damage received.")]

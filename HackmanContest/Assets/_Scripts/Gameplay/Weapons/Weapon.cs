@@ -31,6 +31,8 @@ public class Weapon : MonoBehaviour
     public static readonly string RECOIL_LAYER_NAME = "Recoil";
     public static readonly string BASE_LAYER_NAME = "Base";
 
+    [SerializeField] private AudioClip onShootSound;
+
     [Header("Components")]
     [SerializeField] private Transform mainShotOrigin;
 
@@ -197,6 +199,8 @@ public class Weapon : MonoBehaviour
 
     public void FireWeapon()
     {
+        AudioSource.PlayClipAtPoint(onShootSound, transform.position, 0.5f);
+
         foreach (var effect in shootEffectPrefabs)
         {
             effect.EmitSetAmount();

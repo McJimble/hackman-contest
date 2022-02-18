@@ -14,6 +14,8 @@ public class HangmanUI : MonoBehaviour
 
     public static readonly string[] RandomPraiseWords = new string[] { "Nice", "Good Job", "Awesome", "Wow", "Congrats" };
 
+    [SerializeField] private AudioClip scoreUpClip;
+
     [Header("Components")]
     [SerializeField] private HangmanController controller;
     [SerializeField] private ScrollingRawImage scrollingBG;
@@ -185,12 +187,16 @@ public class HangmanUI : MonoBehaviour
 
         // Every frame, add up towards total point award.
         int currentDisplay = 0;
+        int countUntilSound = 0;
         while (currentDisplay <= totalPointAward)
         {
             currentDisplay += (int)((Time.deltaTime / scoreAddWaitTime) * totalPointAward);
             currentDisplay = Mathf.Min(currentDisplay, totalPointAward);
             Debug.LogFormat("Current: {0}, Total: {1}", currentDisplay, totalPointAward);
             correctScoreDisplayText.text = currentDisplay.ToString();
+            ++countUntilSound;
+            if (countUntilSound % 10 == 0)
+                AudioSource.PlayClipAtPoint(scoreUpClip, transform.position, 0.5f);
             yield return null;
         }
 

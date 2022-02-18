@@ -5,6 +5,8 @@ using System.Collections.Generic;
 [RequireComponent(typeof(HackmanAPIHandler))]
 public class HangmanController : MonoBehaviour
 {
+    [SerializeField] private AudioClip onWinClip;
+
     [SerializeField] private int maxWrongGuesses = 7;
     [SerializeField] private float guessStandbyTime;
     [SerializeField] private float nextWordCooldownTime;
@@ -97,6 +99,7 @@ public class HangmanController : MonoBehaviour
         if (CorrectGuessesRemaining <= 0)
         {
             onWordGuessed?.Invoke(currentWord, guessedLetters.ToString());
+            AudioSource.PlayClipAtPoint(onWinClip, transform.position, 0.5f);
             ResetHangmanState();
         }
     }

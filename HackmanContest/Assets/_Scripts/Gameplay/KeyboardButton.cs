@@ -4,6 +4,8 @@ using TMPro;
 
 public class KeyboardButton : MonoBehaviour, IDamageReceiver
 {
+    [SerializeField] private AudioClip onHitClip;
+
     [Header("Components")]
     [Tooltip("Hangman controller to send events and listen to. If not set, it" +
         "will try to find one with FindObjectOfType.")]

@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; protected set; }
     public static Camera MainCamera { get; set; }   // Helps avoid Camera.main calls when reference to main camera is needed.
 
+    [SerializeField] private AudioClip onGameOverClip;
+    [SerializeField] private AudioClip music;
+
     [Header("UI")]
     [SerializeField] private GameObject playerHUD;
     [SerializeField] private GameObject gameOverHUD;
@@ -131,6 +134,7 @@ public class GameManager : MonoBehaviour
 
     private void GameOverUIActive()
     {
+        AudioSource.PlayClipAtPoint(onGameOverClip, player.transform.position, 0.5f);
         gameOverScoreText.text = "Game Over!\n You Scored " + Score + " points\nPlay again?";
         gameOverHUD.SetActive(true);
 
