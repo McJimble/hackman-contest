@@ -23,3 +23,10 @@ Jump - Spacebar
 Sprint - Left Shift
 
 Due to it not being a priority, the game only supports keyboard and mouse. This will be fixed in a later update.
+
+# Notes
+Since I'm not a very good animator/3d modeler, none of the 3d assets and animations were created by me.
+The packages used were Synty Low Poly asset package, as well as Unity's Standard Character assets https://github.com/Unity-Technologies/Standard-Assets-Characters
+
+All 2D sprites and UI images were drawn by me.
+I plan to add more visuals, as well as custom models and animations in the future in order to practice those skills.
