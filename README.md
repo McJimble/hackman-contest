@@ -24,9 +24,19 @@ Sprint - Left Shift
 
 Due to it not being a priority, the game only supports keyboard and mouse. This will be fixed in a later update.
 
+# Code Architecture
+In terms of architecture, I essentially tried to make most gameplay-relative components as reusable as possible.
+While it's completely overkill in some aspects for a game of this scope, I tried to structure most things as if any larger scope
+3rd person shooter could be created using what exists as a base (adding enemies, weapons, etc)
+
+
 # Notes
 Since I'm not a very good animator/3d modeler, none of the 3d assets and animations were created by me.
 The packages used were Synty Low Poly asset package, as well as Unity's Standard Character assets https://github.com/Unity-Technologies/Standard-Assets-Characters
+However, not all animations in the game are from those packages. Inverse Kinematics were used for more dynamic animations the occur in real time, like running with your weapon, shooting and holding a weapon, etc.
 
 All 2D sprites and UI images were drawn by me.
 I plan to add more visuals, as well as custom models and animations in the future in order to practice those skills.
+
+
+
