@@ -5,7 +5,7 @@ Submission for the Hackman contest hosted by the Clemson School of Computing dis
 
 This project was built using Unity 2021.2.7f1. You do not need this exact version to fully open the source/editor files, but any relatively close version will do.
 
-Finally, the current version has the keys used for the API hidden, so the game may not load words when playing the editor!
+Finally, the current version has the keys used for the API hidden from the git branch, so the game may not load words when playing the editor!
 
 To play the game, simply download the most recent build from the Releases tab and run HackmanContest.exe
 
