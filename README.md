@@ -16,10 +16,15 @@ Run and jump around the arena while using your trusty gun to play Hangman on the
 The game uses standard 3rd person shooter controls:
 
 Aim - Mouse
+
 Move - WASD
+
 Shoot - Left Click
-Aim dow sights - Right click
+
+Aim down sights - Right click
+
 Jump - Spacebar
+
 Sprint - Left Shift
 
 Due to it not being a priority, the game only supports keyboard and mouse. This will be fixed in a later update.
