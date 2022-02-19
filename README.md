@@ -8,7 +8,7 @@ This project was built using Unity 2021.2.7f1. You do not need this exact versio
 Finally, the current version has the keys used for the API hidden from the git branch, so the game may not load words when playing the editor!
 
 To run the game, simply download the most recent build from the Releases tab and run the HackmanContest executable.
-The current release only contains a Windows version. Working on releasing the others as soon as I can.
+The current release only contains a Windows version.
 
 # How To Play
 Run and jump around the arena while using your trusty gun to play Hangman on the big screen. Simply shoot the letters on the large keyboard to enter them in. You receive more points the faster you complete the word! Get a word wrong, though, and you'll take damage. After 3 failed rounds, the game is over!
@@ -27,7 +27,7 @@ Jump - Spacebar
 
 Sprint - Left Shift
 
-Due to it not being a priority, the game only supports keyboard and mouse. This will be fixed in a later update.
+Due to it not being a priority, the game only supports keyboard and mouse right now.
 
 # Code Architecture
 In terms of architecture, I essentially tried to make most gameplay-relative components as reusable as possible.
@@ -45,6 +45,6 @@ I plan to add more visuals, as well as custom models and animations in the futur
 
 # Known Issues
 - Player can climb walls and walk through corners due to inaccurate displacement calculations
-- Shooting inputs are occasionally ignored (rare)
+- Shooting inputs are occasionally ignored
 
 
