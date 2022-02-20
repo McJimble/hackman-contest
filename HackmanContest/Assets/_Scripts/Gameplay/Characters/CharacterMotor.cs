@@ -13,14 +13,11 @@ using UnityEditor;
 public class CharacterMotor : MonoBehaviour
 {
     // Avoids grounded check passing true on character jump.
-    public static readonly float JUMP_DELAY = 0.05f;
+    public static readonly float JUMP_DELAY = 0.15f;
     public static readonly Vector3 GROUND_RAY_OFFSET = new Vector3(0f, -0.3f, 0);
 
     [Header("Grounded Checks")]
     [SerializeField] private LayerMask whatIsGroundMask;
-    [Tooltip("When grounded, physic material will use these properties. Determines behavior in edge cases like" +
-        "standing on the tip of a ledge where a capsule may slip without friction")]
-    [SerializeField] private PhysicMaterial groundedPhysicMaterial;
     [SerializeField] private float groundCheckHeight = 0.2f;
     [SerializeField] private float pullToGroundHeight = 0.7f;
     [SerializeField] private float pullToGroundForce = 50f;
@@ -34,8 +31,12 @@ public class CharacterMotor : MonoBehaviour
     [SerializeField] private float jumpBufferTime = 0.2f;
     [SerializeField] private float jumpSpeed = 5f;
     [Tooltip("Normal movement is multiplied by this amount when airborne.")]
+    [Space]
+    [SerializeField] private bool useQuadraticDrag = true;
     [Min(0f)]
     [SerializeField] private float airControlFactor = 0.6f;
+    [SerializeField] private float groundedDrag = 3f;
+    [SerializeField] private float airDrag = 6f;
 
     [Header("Animator Properties")]
     [Tooltip("Accumulates root motion values that can be used by this controller. Root motion not" +
@@ -53,19 +54,18 @@ public class CharacterMotor : MonoBehaviour
     private float jumpBufferTimeRemaining = 0f;
     private float jumpDelayTimeRemaining = 0f;
     private float timeAirborne = 0f;
-    private bool isGrounded = false;
+    [SerializeField] private bool isGrounded = false;
     private bool isGroundedLastFrame = false;
 
     private Rigidbody rb;
     private CapsuleCollider capsule;
-    private PhysicMaterial physMat;
     private float initDynamicFriction;
 
     private int rootMotionGroundedFac;
 
     public bool IsGroundedCoyote { get => timeAirborne < coyoteTime; }
     public bool IsJumpingBuffered { get => jumpBufferTimeRemaining > 0f; }
-    public bool IsJumping { get => jumpDelayTimeRemaining > 0f || rb.velocity.y > 0f || displacementThisFrame.y > 0f; }
+    public bool IsJumping { get => jumpDelayTimeRemaining > 0f; }
     public float JumpSpeed { get => jumpSpeed; set => jumpSpeed = value; }
 
     public event System.Action onMotorGrounded;
@@ -76,23 +76,21 @@ public class CharacterMotor : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         capsule = GetComponent<CapsuleCollider>();
 
-        physMat = (groundedPhysicMaterial) ? groundedPhysicMaterial : DefaultGroundedMaterial();
-        initDynamicFriction = physMat.dynamicFriction;
-        capsule.material = physMat;
-
         rootMotionGroundedFac = (applyRootMotionGrounded && rootMotion) ? 1 : 0;
 
         groundedBoxCastSize = new Vector3(capsule.radius, groundCheckHeight, capsule.radius);
 
         onMotorGrounded += ResetRBVerticalVelocity;
+
+        rb.drag = 0f;   // We use custom drag constantly, don't need this getting in the way.
     }
 #if UNITY_EDITOR
 
     private void OnDrawGizmos()
     {
         if (!Application.isPlaying) return;
-       /* Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(PhysicsUtils.GetCapsuleBottomWorld(capsule), 0.3f);*/
+        /* Gizmos.color = Color.green;
+         Gizmos.DrawWireSphere(PhysicsUtils.GetCapsuleBottomWorld(capsule), 0.3f);*/
         Gizmos.color = Color.red;
         Gizmos.DrawLine(groundedRay.origin, groundedRay.origin + (groundedRay.direction * groundCheckHeight));
         Gizmos.color = Color.cyan;
@@ -110,17 +108,28 @@ public class CharacterMotor : MonoBehaviour
 
     private void FixedUpdate()
     {
-        displacementThisFrame = Vector3.zero;
-
-        displacementThisFrame += moveVelocity * (isGrounded ? 1f : airControlFactor);
-
         GroundedChecks();
 
+        moveVelocity *= (isGrounded ? 1f : airControlFactor);
+
         // Final displacement of rigidbody.
-        displacementThisFrame *= Time.fixedDeltaTime;
-        rb.MovePosition(transform.position + displacementThisFrame);
+        rb.MovePosition(rb.position + displacementThisFrame);
+        rb.AddForce(GetDragForce() + moveVelocity, ForceMode.Acceleration);
+
+        displacementThisFrame = Vector3.zero;
+        moveVelocity = Vector3.zero;
 
         //Debug.LogFormat("Grounded: {0}", isGrounded);
+    }
+
+    public Vector3 GetDragForce()
+    {
+        float velMagnitude = rb.velocity.magnitude;     // Cached for return value so we don't recompute sqr. root during normalized call.
+        if (velMagnitude <= 0.0001f) return Vector3.zero;
+
+        float forceMag = (useQuadraticDrag) ? velMagnitude * velMagnitude : velMagnitude;
+
+        return (rb.velocity / -velMagnitude) * forceMag * (isGrounded ? groundedDrag : airDrag);
     }
 
     private void GroundedChecks()
@@ -148,12 +157,13 @@ public class CharacterMotor : MonoBehaviour
             if (groundedHitInfo.point.y > capsuleBottomY)
             {
                 float yDisplacement = Mathf.Lerp(0f, (groundedHitInfo.point.y - capsuleBottomY), stepDisplaceLerp);
-                displacementThisFrame.y += yDisplacement / Time.fixedDeltaTime;
+                displacementThisFrame.y += yDisplacement;
             }
             timeAirborne = 0f;
             isGrounded = true;
-            physMat.dynamicFriction = initDynamicFriction;
         }
+        else
+            isGrounded = false;
 
         // When close to the ground, apply a downward force on the motor to prevent flying off of slopes
         // when reaching the top of them. 
@@ -168,7 +178,7 @@ public class CharacterMotor : MonoBehaviour
         moveVelocity = vel;
     }
 
-    public void StartJump()
+    public void StartJump(bool resetYVel = true)
     {
         jumpBufferTimeRemaining = jumpBufferTime;
 
@@ -179,15 +189,14 @@ public class CharacterMotor : MonoBehaviour
             jumpBufferTimeRemaining = 0f;
             jumpDelayTimeRemaining = JUMP_DELAY;
             timeAirborne = coyoteTime;
-            physMat.dynamicFriction = 0f;
 
-            //rb.AddForce(jumpSpeed * Vector3.up, ForceMode.VelocityChange);
-            Vector3 newVel = rb.velocity;
-            newVel.y = jumpSpeed;
-            rb.velocity = newVel;
+            if (resetYVel)
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+
+            rb.AddForce(jumpSpeed * Vector3.up, ForceMode.Impulse);
         }
     }
-    
+
     private void ResetRBVerticalVelocity()
     {
         Vector3 newVel = rb.velocity;
@@ -195,15 +204,4 @@ public class CharacterMotor : MonoBehaviour
         rb.velocity = newVel;
     }
 
-    public static PhysicMaterial DefaultGroundedMaterial()
-    {
-        PhysicMaterial newMat = new PhysicMaterial("Default Motor Material");
-        newMat.dynamicFriction = 1.3f;
-        newMat.staticFriction = 0.5f;
-        newMat.bounciness = 0.0f;
-        newMat.frictionCombine = PhysicMaterialCombine.Minimum;
-        newMat.bounceCombine = PhysicMaterialCombine.Average;
-
-        return newMat;
-    }
 }

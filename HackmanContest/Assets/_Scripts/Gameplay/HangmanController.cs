@@ -142,8 +142,8 @@ public class HangmanController : MonoBehaviour
             UpdateCorrectGuessesRemaining(toSend);
         }
 
-        Debug.LogFormat("Correct: {0}, Wrong Left: {1}", CorrectGuessesRemaining, WrongGuessesRemaining);
-        Debug.Log(CurrentStateToString('_'));
+        //Debug.LogFormat("Correct: {0}, Wrong Left: {1}", CorrectGuessesRemaining, WrongGuessesRemaining);
+        //Debug.Log(CurrentStateToString('_'));
 
         return true;
     }

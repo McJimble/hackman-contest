@@ -4,7 +4,8 @@ using TMPro;
 
 public class KeyboardButton : MonoBehaviour, IDamageReceiver
 {
-    [SerializeField] private AudioClip onHitClip;
+    [SerializeField] private AudioClip onClickSoundRight;
+    [SerializeField] private AudioClip onClickSoundWrong;
 
     [Header("Components")]
     [Tooltip("Hangman controller to send events and listen to. If not set, it" +
@@ -85,6 +86,7 @@ public class KeyboardButton : MonoBehaviour, IDamageReceiver
         if ((char.ToLower(letter) == char.ToLower(associatedLetter) && !isClicked))
         {
             isClicked = true;
+            SoundManager.Instance.PlaySound(onClickSoundWrong);
             SetClickVisuals(onWrongColor, clickedZPosition);
         }
         else
@@ -98,6 +100,7 @@ public class KeyboardButton : MonoBehaviour, IDamageReceiver
         if (char.ToLower(letter) == char.ToLower(associatedLetter))
         {
             isClicked = true;
+            SoundManager.Instance.PlaySound(onClickSoundRight);
             SetClickVisuals(onRightColor, clickedZPosition);
         }
         else

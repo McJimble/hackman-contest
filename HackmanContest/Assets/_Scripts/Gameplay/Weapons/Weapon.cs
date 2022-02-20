@@ -199,7 +199,7 @@ public class Weapon : MonoBehaviour
 
     public void FireWeapon()
     {
-        AudioSource.PlayClipAtPoint(onShootSound, transform.position, 0.5f);
+        SoundManager.Instance.PlaySound(onShootSound);
 
         foreach (var effect in shootEffectPrefabs)
         {

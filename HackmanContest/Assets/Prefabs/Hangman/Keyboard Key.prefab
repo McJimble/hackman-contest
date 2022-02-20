@@ -3361,6 +3361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9bf5789cc2b7247b1ba2a17c8b6cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onClickSoundRight: {fileID: 8300000, guid: ae96863c731e20742b76b350c2cbc8cf, type: 3}
+  onClickSoundWrong: {fileID: 8300000, guid: d135afdb130dc0b42821e77bea1fb731, type: 3}
   hangmanController: {fileID: 0}
   displayText: {fileID: 6256638913396732765}
   associatedLetter: 65
