@@ -44,7 +44,9 @@ The packages used were Synty Low Poly asset package, as well as Unity's Standard
 However, not all animations in the game are from those packages. Inverse Kinematics were used for more dynamic animations that occur in real time, like running with your weapon, shooting and holding the weapon, etc. 
 While the aforementioned packages come with some starter scripts and camera controls, the only significant package used for gameplay was Cinemachine, which was just for camera collision and aiming
 
-
+# Music/Sound Credits
+- Music: Tostsuzan - PrismCorp Virtual Enterprises https://www.youtube.com/watch?v=INDTQ2aD5EA
+- Sound: JSFXR Sound Generator https://sfxr.me/
 
 # Known Issues
 - The new 3d character of mine that I added is rigged poorly and doesn't look good
