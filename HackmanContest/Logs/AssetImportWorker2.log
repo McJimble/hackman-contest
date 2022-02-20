@@ -765,4 +765,189 @@ Received Import Request.
   Time since last request: 0.000040 seconds.
   path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineSelector.png
   artifactKey: Guid(06bf6150656339941aa98e175a995445) Importer(-1,00000000000000000000000000000000)
-Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineSelector.png using Guid(06bf6150656339941aa98e175a995445) Importer(-1,00000000000000000000000000000000) 
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineSelector.png using Guid(06bf6150656339941aa98e175a995445) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '2cf865183a9dc2795ea7451cdf308e93') in 0.092550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Tool_Normal_Vertical.png
+  artifactKey: Guid(d4dee7369d0da4c5cb294c4f3ea0aee7) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Background/Tool_Normal_Vertical.png using Guid(d4dee7369d0da4c5cb294c4f3ea0aee7) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'adec36e0191aa7769dca02b9b1ee7024') in 0.060132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Panel_Boolean.png
+  artifactKey: Guid(1f012abb1184a47c48035dd54530fb6e) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Panel_Boolean.png using Guid(1f012abb1184a47c48035dd54530fb6e) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '67e62db6926f7a9cc619e40dffebadb0') in 0.017624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Tools/ShapeTool/Stairs_Light.png
+  artifactKey: Guid(e4b05266707f99b40a50fd3e83973928) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Tools/ShapeTool/Stairs_Light.png using Guid(e4b05266707f99b40a50fd3e83973928) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '7873ac0cc06e93a4cab7a1e73b3f2ffb') in 0.007769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Pivot_CenterOnObject_disabled.png
+  artifactKey: Guid(681feae1fa1564753add1c7f0d1f8201) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Pivot_CenterOnObject_disabled.png using Guid(681feae1fa1564753add1c7f0d1f8201) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '79ea4abf608b6d1eab8334a7f0c36ae5') in 0.013274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Offset.png
+  artifactKey: Guid(80e67fafea209ad4aa1459b80c8db968) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Offset.png using Guid(80e67fafea209ad4aa1459b80c8db968) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'dfc1125916f87660d68ab35bc0256ffc') in 0.006260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/LeftArrow@2x.png
+  artifactKey: Guid(f0106cef986be534181a8582cffd29da) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/LeftArrow@2x.png using Guid(f0106cef986be534181a8582cffd29da) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '5790eb2a1e72175dda31cdf004c9df17') in 0.006678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/Face_Delete_disabled.png
+  artifactKey: Guid(881426ae389ce4286a6761438a81f7a9) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/Face_Delete_disabled.png using Guid(881426ae389ce4286a6761438a81f7a9) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'c9e53f4b54d13f4a89b8ae3d458dde3f') in 0.005849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Fluorescent@2x.png
+  artifactKey: Guid(81321ffad3c324c42806d47efb84d4d1) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Fluorescent@2x.png using Guid(81321ffad3c324c42806d47efb84d4d1) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'cc28fac86fe9b1b4dbb01954e75c4bd7') in 0.006387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Toolbar/ExtrudeFace_VertexNormals.png
+  artifactKey: Guid(43ec922af57f445fab34eb16c76ee135) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Toolbar/ExtrudeFace_VertexNormals.png using Guid(43ec922af57f445fab34eb16c76ee135) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'fa354d950388f77716667f08cfbc1d8e') in 0.004680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.shadergraph/Editor/Resources/Icons/Settings_Flyout_9slice@2x.png
+  artifactKey: Guid(a6abafca3e442ca4d970a1f8a2c70b0a) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.shadergraph/Editor/Resources/Icons/Settings_Flyout_9slice@2x.png using Guid(a6abafca3e442ca4d970a1f8a2c70b0a) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'b89f93bd583eaf6a40e1fb2a6fc8a5a0') in 0.017001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Packages/com.unity.probuilder/Content/Icons/Tools/EditShape_Over.png
+  artifactKey: Guid(011521d35a742354eb7300f35a98cae2) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.probuilder/Content/Icons/Tools/EditShape_Over.png using Guid(011521d35a742354eb7300f35a98cae2) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '6b76bfc66dbcfcb6a8ea740d70aa6eb7') in 0.005960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconoutofsyncoverlay@2x.png
+  artifactKey: Guid(4d7e6e570e9d65a4c9a994783a0652e2) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconoutofsyncoverlay@2x.png using Guid(4d7e6e570e9d65a4c9a994783a0652e2) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '8dc1ead53e5f4c254d616022cbacee51') in 0.088468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_27.png
+  artifactKey: Guid(c989e1ed85cf7154caa922fec53e6af6) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.render-pipelines.universal/Textures/BlueNoise16/L/LDR_LLL1_27.png using Guid(c989e1ed85cf7154caa922fec53e6af6) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'db1862ff276b88469473f2d0de37a13f') in 0.012300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Fluorescent.png
+  artifactKey: Guid(52dd14d6fa6ca2d46b942c8289a898eb) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/LightUnitIcons/Fluorescent.png using Guid(52dd14d6fa6ca2d46b942c8289a898eb) Importer(-1,00000000000000000000000000000000)  -> (artifact id: '95e8339f79aae6f8be6b55e995d798eb') in 0.020389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008658 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd
+  artifactKey: Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(-1,00000000000000000000000000000000)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd using Guid(fb5730e24283d0c489e5c7d0bee023d9) Importer(-1,00000000000000000000000000000000)  -> (artifact id: 'f19a52efd0a52c1e300e3d44ee48e631') in 0.017239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Package Assets/Samples/Cinemachine/2.8.4/Cinemachine Example Scenes/Scenes/Anywhere Door/ReflectionProbe-0.exr
+  artifactKey: Guid(a16639fe411a545a9a8d7f17cf816377) Importer(-1,00000000000000000000000000000000)
+Start importing Assets/Package Assets/Samples/Cinemachine/2.8.4/Cinemachine Example Scenes/Scenes/Anywhere Door/ReflectionProbe-0.exr using Guid(a16639fe411a545a9a8d7f17cf816377) Importer(-1,00000000000000000000000000000000) Starting cubemap convolution for '' (size 512)
+...took 2.444 seconds
+ -> (artifact id: 'e578a42d928395130d5fb39d96142d36') in 2.547765 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.05 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 46 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.5 MB). Loaded Objects now: 6169.
+Memory consumption went from 104.2 MB to 103.7 MB.
+Total: 4.301400 ms (FindLiveObjects: 0.491500 ms CreateObjectMapping: 0.574900 ms MarkObjects: 2.953900 ms  DeleteObjects: 0.280400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018988 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\black\Desktop\Game Dev\Unity Projects\Hackman Contest Repo\hackman-contest\HackmanContest\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\black\Desktop\Game Dev\Unity Projects\Hackman Contest Repo\hackman-contest\HackmanContest\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.676 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1677ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1366ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (403ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (727ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (517ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.83 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5538 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 64 unused Assets / (0.5 MB). Loaded Objects now: 6190.
+Memory consumption went from 218.0 MB to 217.5 MB.
+Total: 4.244600 ms (FindLiveObjects: 0.467400 ms CreateObjectMapping: 0.465000 ms MarkObjects: 3.039400 ms  DeleteObjects: 0.271800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
