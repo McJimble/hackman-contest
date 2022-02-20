@@ -1,7 +1,7 @@
 # Hackman Contest
 I made Hangman, but it's a 3rd person shooter for some reason.
 
-<img src="images/stick%20guy%20thumbnail.png" width="320" height="180">
+<img src="images/stick%20guy%20thumbnail.png" width="640" height="320">
 
 Submission for the Hackman contest hosted by the Clemson School of Computing discord. The goal was to make a hangman related program in 2 weeks, provided that we utilize their custom API to receive information from a server during gameplay. 
 
