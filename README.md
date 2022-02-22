@@ -1,4 +1,4 @@
-# Hackman Contest
+# Hackman
 I made Hangman, but it's a 3rd person shooter for some reason.
 
 <img src="images/stick%20guy%20thumbnail.png" width="640" height="320">
