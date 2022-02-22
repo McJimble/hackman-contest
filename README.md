@@ -34,8 +34,12 @@ Due to it not being a priority, the game only supports keyboard and mouse right 
 # Code Architecture
 In terms of architecture, I essentially tried to make most gameplay-relative components as reusable as possible.
 While it's completely overkill in some aspects for a game of this scope, I tried to structure most things as if any larger scope
-3rd person shooter could be created using what exists as a base (adding enemies, weapons, etc)
+3rd person shooter could be created using what exists as a base (adding enemies, weapons, etc).
 
+Most components in the game can applied to any other objects and serve their purpose with little dependencies. This is further exemplified with most components having
+event-driven capabilities, so that other scripts (like UI) can be notified of information changes without coupling the two components together. For example, all UI in the game
+subscribes to events on some other component (HangmanController, HealthComponent, GameManager) and displays the necessary information provided from a C# event. This means only
+the UI in this example has a reference to the other component, and not vice versa.
 
 # Notes
 Since I'm not a very good animator/3d modeler, none of the 3d assets and animations were created by me (except for the broken main character), but all 2D sprites and UI images were drawn by me.
